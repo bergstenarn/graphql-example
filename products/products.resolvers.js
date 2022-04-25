@@ -16,5 +16,8 @@ module.exports = {
     addNewProduct: (_, { id, description, price }) => {
       return productsModel.addNewProduct(id, description, price);
     },
+    addNewProductReview: (_, { id, rating, comment }) => {
+      return productsModel.addNewProductReview(id, rating, comment);
+    },
   },
 };
